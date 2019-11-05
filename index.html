@@ -12,6 +12,29 @@
     <title>supadeangeli beats</title>
   </head>
   <body>
+
+    <!--song streaming modal-->
+    <div class="modal fade" id="streaming-select-modal" tabindex="-1" role="dialog" aria-labelledby="streaming-select-modal-label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="streaming-select-modal-label">Select a Streaming Service</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="list-group">
+              <a href="https://soundcloud.com/supasquidds/talk-that-way" class="list-group-item list-group-item-action">Listen on SoundCloud</a>
+              <a href="https://open.spotify.com/track/3vUcwnXfPwH8svPTp4Ez5o?si=b63N8wq3QuiRXY7AZkL-wA" class="list-group-item list-group-item-action">Listen on Spotify</a>
+              <a href="https://music.apple.com/us/album/talk-that-way-single/1481901449?app=music&ign-mpt=uo%3D4" class="list-group-item list-group-item-action">Listen on Apple Music</a>
+            </div>
+          </div>
+          <div class="modal-footer">Talk That Way - Supa Squidds</div>
+        </div>
+      </div>
+    </div>
+
     <div class="container-fluid">
 
       <!--webpage header-->
@@ -21,7 +44,7 @@
         </div>
       </div>
 
-      <!--spotlights for best beats and new releases-->
+      <!--spotlights for beats and new releases-->
       <div class="row">
         <div id="beat-spotlight" class="spotlight col-md-6">
           <h5 class="spotlight-header">beat spotlight</h5>
@@ -29,11 +52,20 @@
             <li class="list-group-item">First item</li>
             <li class="list-group-item">Second item</li>
             <li class="list-group-item">Third item</li>
+            <li class="list-group-item">4 item</li>
+            <li class="list-group-item">5 item</li>
           </ul>
         </div>
 
         <div id="releases-spotlight" class="spotlight col-md-6">
           <h5 class="spotlight-header">new releases</h5>
+          <div id="release-img-container" class="album-img-container">
+            <!--new release img added here-->
+            <div id="release-message" class="text-over-img">
+              Talk That Way Out Now!!
+              <button type="button" data-toggle="modal" data-target="#streaming-select-modal">Listen</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
