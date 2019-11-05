@@ -46,7 +46,7 @@
 
       <!--spotlights for beats and new releases-->
       <div class="row">
-        <div id="beat-spotlight" class="spotlight col-md-6">
+        <div id="beat-spotlight" class="spotlight col-md-4">
           <h5 class="spotlight-header">beat spotlight</h5>
           <ul class="list-group">
             <li class="list-group-item">First item</li>
@@ -57,16 +57,29 @@
           </ul>
         </div>
 
-        <div id="releases-spotlight" class="spotlight col-md-6">
+        <div id="releases-spotlight" class="spotlight col-md-8">
           <h5 class="spotlight-header">new releases</h5>
-          <div id="release-img-container" class="album-img-container">
-            <!--new release img added here-->
-            <div id="release-message" class="text-over-img">
-              Talk That Way Out Now!!
-              <button type="button" data-toggle="modal" data-target="#streaming-select-modal">Listen</button>
+          <div class="row">
+            <div id="release-img-container" class="album-img-container col-md-6">
+              <!--new release img added here-->
+              <div class="text-over-img">
+                New Single: Talk That Way
+                <br>
+                <button type="button" class="btn btn-link" style="padding: 0px; margin: 0px;"data-toggle="modal" data-target="#streaming-select-modal">Listen</button>
+              </div>
+            </div>
+
+            <div id="release-gif-container" class="album-img-container col-md-6">
+              <!--new video gif added here-->
+              <div class="text-over-img">
+                New Video: Skeletal
+                <br>
+                <a href="https://www.youtube.com/watch?v=ROygtYxgTr4">Watch</a>
+              </div>
             </div>
           </div>
         </div>
+
       </div>
     </div>
 

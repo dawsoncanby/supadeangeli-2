@@ -17,19 +17,17 @@
 
 .album-img-container {
   margin: auto;
-  display: block;
+  display: inline-block;
   width: 250px;
   height:250px;
 }
 
 .text-over-img {
   text-align: center;
-  position: relative;
-  width: 80%;
-  left: 10%;
-  bottom: 70px;
+  position: absolute;
+  top: 0px;
   color: white;
   background-color: #333333;
   padding: 5px;
-  opacity: 0.9;
+  opacity: 0.95;
 }
