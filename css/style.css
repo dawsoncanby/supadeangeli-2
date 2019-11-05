@@ -1,0 +1,21 @@
+body {
+  background-color: #4d79ff;
+}
+
+.page-header {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: none;
+  tex
+}
+
+.spotlight {
+  display: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.spotlight-header {
+  text-align: center;
+}
