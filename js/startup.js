@@ -1,10 +1,32 @@
 $(document).ready(function() {
-  // add images/gifs
-  $('#release-img-container').prepend('<img src="img/talk_that_way.jpg" alt="new release" style="display: block;margin: auto;"></img>');
-  $('#release-gif-container').prepend('<img src="img/skeletal.gif" alt="new release" style="display: block;margin: auto;"></img>');
 
-  // fade in content
-  $('#page-header').fadeIn(1000);
-  $('#beat-spotlight').fadeIn(2000);
-  $('#releases-spotlight').fadeIn(2500);
+  // modal click listener
+  $('#release-img').click(() => {
+    $('#streaming-select-modal').modal('show');
+  });
+
+  // setup beats
+  metadata.beats.forEach((e) => {
+    var beat = $('<li class="beat-list-item list-group-item list-group-item-action">' + e + '</li>');
+    beat.click(() => {
+      Player.load('beats/' + e);
+    });
+    $('#beat-spotlight-list').append(beat);
+  });
+
+  $("#beat-search").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#beat-spotlight-list li").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+
+  // setup control bar
+  $('#play-button').click(() => {
+    Player.toggleAudio();
+  });
+
+  // show page
+  $('#loading-page').remove();
+  $('.show-after-page-load').fadeIn(200);
 });

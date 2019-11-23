@@ -1,33 +1,65 @@
+#loading-page {
+    width: 100%;
+}
+
+/* used by elements that shouldn't be displayed until page is ready */
+.show-after-page-load {
+  display: none;
+}
+
 .page-header {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  display: none;
+}
+
+/* makes sure footer doesn't cover content */
+.above-footer {
+  margin-bottom: 100px;
 }
 
 .spotlight {
-  display: none;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .spotlight-header {
-  text-align: center;
+  font-weight: bold;
 }
 
-.album-img-container {
-  margin: auto;
+.beat-list-item {
+  
+}
+
+#release-img {
   display: inline-block;
-  width: 250px;
-  height:250px;
+  transition: opacity 0.5s;
 }
 
-.text-over-img {
+#release-img:hover {
+  opacity: 0.5;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+}
+
+#control-bar {
   text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  background-color: #DDD;
+}
+
+#control-bar button {
   position: absolute;
-  top: 0px;
-  color: white;
-  background-color: #333333;
-  padding: 5px;
-  opacity: 0.95;
+  left: 10px;
+}
+
+#currently-playing {
+  font-size: 1.2rem;
 }
