@@ -1,8 +1,14 @@
 $(document).ready(function() {
 
+  // create modals
+  Object.keys(linkModalObjs).forEach((e) => {
+    LinkModal.createModal(linkModalObjs[e]);
+  });
+
   // modal click listener
+  // TODO: make each icon individual
   $('#release-img').click(() => {
-    $('#streaming-select-modal').modal('show');
+    $('#streaming-select-modal-skeletal').modal('show');
   });
 
   // setup beats
