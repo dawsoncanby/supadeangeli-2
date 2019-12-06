@@ -28,16 +28,11 @@
 }
 
 .beat-list-item {
-  
+
 }
 
-#release-img {
-  display: inline-block;
-  transition: opacity 0.5s;
-}
-
-#release-img:hover {
-  opacity: 0.5;
+#release-img-container {
+  background-color: darkgray;
 }
 
 #footer {

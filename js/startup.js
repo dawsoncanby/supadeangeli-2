@@ -1,9 +1,10 @@
 $(document).ready(function() {
 
-  // create modals
-  Object.keys(linkModalObjs).forEach((e) => {
-    LinkModal.createModal(linkModalObjs[e]);
+  // create release carousel and link modals
+  Object.keys(linkMetaObjs).forEach((e) => {
+    LinkModal.createModal(linkMetaObjs[e]);
   });
+  ReleaseCarousel.createCarousel(linkMetaObjs);
 
   // modal click listener
   // TODO: make each icon individual
@@ -12,7 +13,7 @@ $(document).ready(function() {
   });
 
   // setup beats
-  metadata.beats.forEach((e) => {
+  beatMetadata.beats.forEach((e) => {
     var beat = $('<li class="beat-list-item list-group-item list-group-item-action">' + e + '</li>');
     beat.click(() => {
       Player.load('beats/' + e);
