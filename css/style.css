@@ -32,7 +32,11 @@
 }
 
 #release-img-container {
-  background-color: darkgray;
+  padding: 20px;
+}
+
+.release-item {
+  text-align: center;
 }
 
 #footer {
